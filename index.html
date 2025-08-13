@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Logger</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>📍 Shop Logger</h2>
+  <input type="text" id="shopName" placeholder="Shop Name" required>
+  <textarea id="note" placeholder="Note"></textarea>
+  <input type="text" id="location" placeholder="GPS Location" readonly>
+  <input type="file" id="photo" accept="image/*" capture="environment">
+  <button onclick="submitData()">Submit</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
